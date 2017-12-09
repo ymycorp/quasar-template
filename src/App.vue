@@ -53,7 +53,7 @@
     animation: moveToLeft 1s both ease;
   }
   .layout-padding {
-    padding: 1em 4em;
+    padding: 1em 1em;
   }
   @media screen and (max-width: 600px){
     .layout-padding {

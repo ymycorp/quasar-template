@@ -1,8 +1,8 @@
 <template>
   <q-drawer ref="leftDrawer" v-show="getLayoutNeeded">
-    <div id="profile">
+    <!-- <div id="profile">
       <img :src="photo" style='height: 80px' class="inline-block">
-      <!--img src="../img/avatar-1.svg" id="avatar" class="inline-block"--> 
+      img src="../img/avatar-1.svg" id="avatar" class="inline-block"
       <div id="user-name">
         <span class="text-white"> {{ name }} </span>
         <hr>
@@ -14,7 +14,7 @@
         <button class="bordered blue small" ><i>lock</i></button>
         <button class="bordered blue small" @click='logOut'><i>exit_to_app</i></button>
       </div>
-    </div>
+    </div> -->
     <menu-one v-if="getMenuCollapse" :links="links"></menu-one>
     <menu-two v-else :links="links"></menu-two>
 
@@ -30,7 +30,7 @@
   import menuOne from './menuOne.vue'
   import menuTwo from './menuTwo.vue'
   import firebase from 'firebase'
-  
+
   export default {
     data () {
       return {
